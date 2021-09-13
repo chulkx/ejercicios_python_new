@@ -16,5 +16,6 @@ def plotear_temperaturas():
     
 def test():
     a = plotear_temperaturas()
+    return a
     
     
