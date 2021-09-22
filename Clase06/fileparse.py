@@ -8,7 +8,7 @@ def parse_csv(nombre_archivo, select = None, types = [str, int, float], has_head
     determinando el parametro select, que debe ser una lista de nombres
     de las columnas a considerar.
     '''
-    with open(nombre_archivo)as f:
+    with open(nombre_archivo, encoding=('utf8')) as f:
         
         filas = csv.reader(f)
         if has_headers:     #si hay header busco los indices de dichas columnas
